@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "motd:blocks/mossy_quartzblock_lines_top",
+        "side": "motd:blocks/mossy_quartzblock_lines"
+    }
+}

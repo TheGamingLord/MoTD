@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "motd:blocks/quartz_bricks_mossy"
+    }
+}

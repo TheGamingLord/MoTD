@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "axis=y":  { "model": "motd:quartz_lines_mossy" },
+        "axis=z":   { "model": "motd:quartz_lines_mossy", "x": 90 },
+        "axis=x":   { "model": "motd:quartz_lines_mossy", "x": 90, "y": 90 }
+    }
+}
