@@ -1,7 +1,7 @@
 package motd.handlers;
 
 import motd.blocks.BaseBlock;
-import motd.blocks.BlockQuartzPillar;
+import motd.blocks.BlockMossyQuartzPillar;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
@@ -25,7 +25,7 @@ public class MOTDBlocks {
 	public static void init() {
 		quartz_bricks = new BaseBlock("quartz_bricks", Material.ROCK, MapColor.QUARTZ).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 		quartz_bricks_mossy = new BaseBlock("quartz_bricks_mossy", Material.ROCK, MapColor.QUARTZ).setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
-		quartz_column_mossy = new BlockQuartzPillar();
+		quartz_column_mossy = new BlockMossyQuartzPillar();
 	}
 	
 	@SubscribeEvent
