@@ -8,6 +8,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
@@ -21,6 +22,7 @@ public class BlockMossyQuartzPillar extends BlockRotatedPillar {
 		super(Material.ROCK, MapColor.QUARTZ);
 		this.setUnlocalizedName("quartz_column_mossy");
 		this.setRegistryName(References.MODID, "quartz_column_mossy");
+		this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 	}
 	
 }
