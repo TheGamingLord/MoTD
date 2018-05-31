@@ -3,6 +3,12 @@ item.diamond_skull.name=Diamond Skull
 item.gold_tablet.name=Gold Tablet
 item.iron_ring.name=Iron Ring
 item.prismarin_cross.name=Prismarin Cross
+item.crab_shell_piece.name=Crab Shell Piece
+
+item.crab_helmet.name=Crab Helmet
+item.crab_chestplate.name=Crab Chestplate
+item.crab_leggings.name=Crab Leggings
+item.crab_boots.name=Crab Boots
 
 tile.quartz_bricks.name=Quartz Bricks
 tile.quartz_bricks_mossy.name=Mossy Quartz Bricks

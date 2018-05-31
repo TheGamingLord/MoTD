@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X X",
+    "X X"
+  ],
+  "key": {
+    "X": {
+      "item": "motd:crab_shell_piece"
+    }
+  },
+  "result": {
+    "item": "motd:crab_boots"
+  }
+}
