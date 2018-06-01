@@ -11,7 +11,6 @@ import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.math.BlockPos;
@@ -21,7 +20,7 @@ import net.minecraft.world.World;
 public class BlockOceanTotem extends BlockFalling {
 	
     public static final PropertyDirection FACING = BlockHorizontal.FACING;
-	
+    
 	public BlockOceanTotem() {
 		super(Material.ROCK);
 		this.setUnlocalizedName("ocean_totem");
@@ -96,6 +95,5 @@ public class BlockOceanTotem extends BlockFalling {
 	protected BlockStateContainer createBlockState() {
 		return new BlockStateContainer(this, new IProperty[] { FACING });
 	}
-	
 	
 }
