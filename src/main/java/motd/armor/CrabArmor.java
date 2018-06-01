@@ -32,6 +32,7 @@ public class CrabArmor extends ItemArmor {
 			player.inventory.armorItemInSlot(3).getItem() == MOTDItems.crab_helmet
 		) {
 			player.addPotionEffect(new PotionEffect(Potion.getPotionById(13), 0, 1));
+			player.addPotionEffect(new PotionEffect(Potion.getPotionById(11), 0, 1));
 		}
 	}
 	
