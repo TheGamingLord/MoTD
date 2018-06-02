@@ -1,15 +1,13 @@
 package motd.items;
 
-import motd.References;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
+import zdoctor.lazylibrary.common.base.EasyItem;
 
-public class BaseItem extends Item {
-	
+public class BaseItem extends EasyItem {
+
 	public BaseItem(String name, CreativeTabs creativeTab) {
-		this.setUnlocalizedName(name);
-		this.setRegistryName(References.MODID, name);
+		super(name);
 		this.setCreativeTab(creativeTab);
 	}
-	
+
 }

@@ -1,17 +1,15 @@
 package motd.blocks;
 
-import motd.References;
-import net.minecraft.block.Block;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
-import net.minecraft.item.ItemBlock;
+import net.minecraft.creativetab.CreativeTabs;
+import zdoctor.lazylibrary.common.base.EasyBlock;
 
-public class BaseBlock extends Block {
-	
+public class BaseBlock extends EasyBlock {
+
 	public BaseBlock(String name, Material material, MapColor mapColor) {
-		super(material, mapColor);
-		this.setUnlocalizedName(name);
-		this.setRegistryName(References.MODID, name);
+		super(name, material, mapColor);
+		setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 	}
-	
+
 }
