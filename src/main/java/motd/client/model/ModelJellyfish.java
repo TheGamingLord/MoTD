@@ -2,6 +2,7 @@ package motd.client.model;
 
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
+import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.entity.Entity;
 
 /**
@@ -69,6 +70,10 @@ public class ModelJellyfish extends ModelBase {
 
     @Override
     public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) { 
+    	GlStateManager.pushMatrix();
+    	GlStateManager.translate(-0.05, 0, -0.05);
+    	GlStateManager.enableBlend();
+    	GlStateManager.enableCull();
         this.Body1.render(f5);
         this.Side1.render(f5);
         this.Side4.render(f5);
@@ -81,6 +86,9 @@ public class ModelJellyfish extends ModelBase {
         this.Body3.render(f5);
         this.Body2.render(f5);
         this.Side2.render(f5);
+        GlStateManager.disableCull();
+        GlStateManager.disableBlend();
+        GlStateManager.popMatrix();
     }
 
     /**

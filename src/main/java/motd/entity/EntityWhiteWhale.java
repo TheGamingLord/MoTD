@@ -8,6 +8,6 @@ public class EntityWhiteWhale extends EntityCreature {
 
 	public EntityWhiteWhale(World worldIn) {
 		super(worldIn);
-		this.setSize(0.6F, 1.95F);
+		this.setSize(50F, 8F);
 	}
 }
