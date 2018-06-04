@@ -7,6 +7,6 @@ public class EntityPrismarineGolem extends EntityGolem {
 
 	public EntityPrismarineGolem(World worldIn) {
 		super(worldIn);
-		this.setSize(0.6F, 1.95F);
+		this.setSize(1.4F, 2.7F);
 	}
 }

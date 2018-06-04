@@ -2,6 +2,7 @@ package motd.client.model;
 
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
+import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.entity.Entity;
 
 /**
@@ -66,6 +67,9 @@ public class ModelWhiteWhale extends ModelBase {
 
     @Override
     public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) { 
+    	GlStateManager.pushMatrix();
+    	GlStateManager.translate(0, -4, 0);
+    	GlStateManager.scale(6, 6, 6);
         this.shape1.render(f5);
         this.shape1_3.render(f5);
         this.shape1_4.render(f5);
@@ -77,6 +81,7 @@ public class ModelWhiteWhale extends ModelBase {
         this.shape1_2.render(f5);
         this.shape1_1.render(f5);
         this.shape1_8.render(f5);
+        GlStateManager.popMatrix();
     }
 
     /**

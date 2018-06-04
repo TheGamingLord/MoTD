@@ -2,6 +2,7 @@ package motd.client.model;
 
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
+import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.entity.Entity;
 
 /**
@@ -150,6 +151,9 @@ public class ModelKingCrab extends ModelBase {
 
     @Override
     public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) { 
+    	GlStateManager.pushMatrix();
+    	GlStateManager.translate(0, -5.9, 0);
+    	GlStateManager.scale(5, 5, 5);
         this.Eyeball.render(f5);
         this.arm2.render(f5);
         this.leg6_1.render(f5);
@@ -178,6 +182,7 @@ public class ModelKingCrab extends ModelBase {
         this.claw4.render(f5);
         this.leg5.render(f5);
         this.leg3_1.render(f5);
+        GlStateManager.popMatrix();
     }
 
     /**

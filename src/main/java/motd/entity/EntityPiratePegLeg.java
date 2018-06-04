@@ -4,9 +4,9 @@ import net.minecraft.entity.EntityCreature;
 import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.world.World;
 
-public class EntityJellyFish extends EntityCreature {
+public class EntityPiratePegLeg extends EntityMob {
 
-	public EntityJellyFish(World worldIn) {
+	public EntityPiratePegLeg(World worldIn) {
 		super(worldIn);
 		this.setSize(1.2F, 2.35F);
 	}

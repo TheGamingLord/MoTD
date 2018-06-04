@@ -3,6 +3,7 @@ package motd.client.renderer.entity;
 import motd.client.model.ModelMegalodon;
 import motd.client.model.ModelMerman;
 import motd.entity.EntityMegalodon;
+import net.minecraft.client.renderer.culling.ICamera;
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.util.ResourceLocation;
@@ -21,4 +22,9 @@ public class RenderMegalodon extends RenderLiving<EntityMegalodon> {
 		return TEXTURE;
 	}
 
+	@Override
+	public boolean shouldRender(EntityMegalodon livingEntity, ICamera camera, double camX, double camY, double camZ) {
+		return super.shouldRender(livingEntity, camera, camX, camY, camZ);
+	}
+	
 }
