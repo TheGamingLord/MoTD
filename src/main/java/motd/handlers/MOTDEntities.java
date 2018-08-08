@@ -66,7 +66,7 @@ public class MOTDEntities {
 	}
 	
 	public static void registerEntity(Class<? extends Entity> entityClass, String name, int primaryEggColor, int secondaryEggColor, int id) {
-		EntityRegistry.registerModEntity(new ResourceLocation(name), entityClass, name, id, MOTD.instance, 80, 3, true, primaryEggColor, secondaryEggColor);
+		EntityRegistry.registerModEntity(new ResourceLocation(name), entityClass, name, id, MOTD.instance, 50, 3, true, primaryEggColor, secondaryEggColor);
 		//RenderingRegistry.registerEntityRenderingHandler(entityClass, renderManager -> new RenderDavyJones(renderManager));
 	}
 	
