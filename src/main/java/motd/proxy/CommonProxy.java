@@ -1,7 +1,7 @@
 package motd.proxy;
 
 import motd.handlers.MOTDBlocks;
-import motd.handlers.MOTDEntites;
+import motd.handlers.MOTDEntities;
 import motd.handlers.MOTDItems;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -10,9 +10,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class CommonProxy {
 
 	public void preInit(FMLPreInitializationEvent event) {
-		MOTDItems.init();
-		MOTDBlocks.init();
-		MOTDEntites.init();
+		MOTDEntities.init();
 	}
 
 	public void init(FMLInitializationEvent event) {

@@ -1,5 +1,7 @@
 package motd.blocks;
 
+import motd.References;
+import net.minecraft.block.BlockFalling;
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
@@ -14,14 +16,15 @@ import net.minecraft.util.Rotation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import zdoctor.lazylibrary.common.block.EasyBlockFalling;
 
-public class BlockOceanTotem extends EasyBlockFalling {
+public class BlockOceanTotem extends BlockFalling {
 
 	public static final PropertyDirection FACING = BlockHorizontal.FACING;
 
 	public BlockOceanTotem() {
-		super("ocean_totem", Material.ROCK);
+		super(Material.ROCK);
+		this.setUnlocalizedName("ocean_totem");
+		this.setRegistryName(References.MODID, "ocean_totem");
 		this.setCreativeTab(CreativeTabs.MISC);
 		this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 	}
